@@ -1,0 +1,31 @@
+{
+  "search": "Search",
+  "about": "About us",
+  "contact": "Contact with us",
+  "github": "https://github.com/CreatechStudio",
+  "more": "Explore more",
+  "title": "Deliver faster",
+  "subtitle": "with incredible network performance",
+  "desc": "MUI offers a comprehensive suite of free UI tools to help you ship new features faster. Start with Material UI, our fully-loaded component library, or bring your own design system to our production-ready components.",
+  "blog": {
+    "title": "Createch Blog",
+    "link0": {
+      "title": "从Arc迁移到Safari",
+      "link": "https://blog.createchstudio.com/posts/60737/",
+      "date": "2024-12-25"
+    },
+    "link1": {
+      "title": "使用 Git 和 GitHub 协作编程",
+      "link": "https://blog.createchstudio.com/posts/59153/",
+      "date": "2024-11-29"
+    },
+    "link2": {
+      "title": "生产环境部署指北",
+      "link": "https://blog.createchstudio.com/posts/34652/",
+      "date": "2024-11-16"
+    }
+  },
+  "mc": {
+    "title": "Minecraft"
+  }
+}

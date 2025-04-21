@@ -15,7 +15,7 @@ export default function Home() {
                     <MainDescription/>
                 </Stack>
                 <Stack sx={{width: '100%'}} alignItems="center">
-                    <BlogCard/>
+                    {/*<BlogCard/>*/}
                 </Stack>
             </Box>
         </React.Fragment>

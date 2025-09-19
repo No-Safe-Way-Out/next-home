@@ -3,7 +3,8 @@
   "search": "搜索",
   "about": "关于我们",
   "contact": "与我们联系",
-  "github": "https://github.com/CreatechStudio",
+  "contact-email": "contact@nosafewayout.com",
+  "github": "https://github.com/No-Safe-Way-Out",
   "more": "查看更多",
   "title": "更快传递",
   "subtitle": "使用极致网络性能",
@@ -15,5 +16,7 @@
   },
   "mc": {
     "title": "我的世界"
-  }
+  },
+  "start-now": "立即开始",
+  "start-forum": "访问论坛"
 }

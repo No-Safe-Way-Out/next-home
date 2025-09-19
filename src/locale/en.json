@@ -3,7 +3,8 @@
   "search": "Search",
   "about": "About us",
   "contact": "Contact with us",
-  "github": "https://github.com/CreatechStudio",
+  "contact-email": "contact@nosafewayout.com",
+  "github": "https://github.com/No-Safe-Way-Out",
   "more": "Explore more",
   "title": "Deliver faster",
   "subtitle": "with incredible network performance",
@@ -15,5 +16,7 @@
   },
   "mc": {
     "title": "Minecraft"
-  }
+  },
+  "start-now": "Try Now",
+  "start-forum": "Visit Forum"
 }

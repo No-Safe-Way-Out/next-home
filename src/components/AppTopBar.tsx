@@ -1,6 +1,6 @@
 'use client'
 
-import {alpha, AppBar, Box, InputBase, Stack, styled, Toolbar, Tooltip} from "@mui/material";
+import {alpha, AppBar, Box, Stack, styled, Toolbar, Tooltip} from "@mui/material";
 import Logo from "@/components/Logo";
 import {useI18n} from "@/locale/client";
 import StyledIconButton from "@/components/StyledIconButton";
@@ -8,6 +8,7 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ChangeLocaleButton from "@/components/ChangeLocaleButton";
+import {openLink} from "@/lib/utils";
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
     position: 'sticky',
@@ -29,12 +30,12 @@ export default function AppTopBar() {
                         </Box>
                         <Stack direction="row" gap={2}>
                             <Tooltip title={t('github')}>
-                                <StyledIconButton>
+                                <StyledIconButton onClick={() => openLink(t('github'))}>
                                     <GitHubIcon color="primary"/>
                                 </StyledIconButton>
                             </Tooltip>
                             <Tooltip title={t('contact')}>
-                                <StyledIconButton>
+                                <StyledIconButton onClick={() => openLink(`mailto:${t('contact-email')}`)}>
                                     <ForwardToInboxOutlinedIcon color="primary"/>
                                 </StyledIconButton>
                             </Tooltip>

@@ -3,6 +3,7 @@
 import {Box, Button, Stack, styled, Typography} from "@mui/material";
 import {useI18n} from "@/locale/client";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import {openLink} from "@/lib/utils";
 
 const TitleTypography = styled(Typography)(({ theme }) => ({
     background: `linear-gradient(90deg, ${theme.palette.primary.light} 5%, ${theme.palette.primary.main} 90%)`,
@@ -18,7 +19,7 @@ export default function MainDescription() {
     const t = useI18n();
 
     return (
-        <Stack gap={3} sx={{maxWidth: 500}}>
+        <Stack gap={3} sx={{maxWidth: 500}} justifyContent="center" alignItems="flex-start">
             <Stack>
                 <TitleTypography variant="h2" fontWeight={600}>
                     {t('title')}
@@ -30,14 +31,23 @@ export default function MainDescription() {
             <Typography variant="body1">
                 {t('desc')}
             </Typography>
-            <Box>
+            <Stack direction="row" spacing={3}>
                 <ContactButton
                     variant="contained"
                     endIcon={<KeyboardArrowRightIcon/>}
+                    onClick={() => openLink('https://chat.nosafewayout.com/')}
                 >
-                    {t('contact')}
+                    {t('start-now')}
                 </ContactButton>
-            </Box>
+
+                <Button
+                    variant="outlined"
+                    endIcon={<KeyboardArrowRightIcon/>}
+                    onClick={() => openLink('https://forum.nosafewayout.com/')}
+                >
+                    {t('start-forum')}
+                </Button>
+            </Stack>
         </Stack>
     );
 }

@@ -32,5 +32,4 @@ jobs:
           push: true
           tags: |
             iewnfod/no-safe-home:latest
-          context: frontend
-          file: frontend/Dockerfile
+          context: .
